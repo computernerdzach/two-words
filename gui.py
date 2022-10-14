@@ -4,14 +4,6 @@ from random import randint as r
 from words import words as w
 
 
-def on_enter(e):
-    btn.configure(bg="lightblue")
-
-
-def on_leave(e):
-    btn.configure(bg="beige")
-
-
 def get_words(words):
     index1 = r(0, (len(words) - 1))
     index2 = r(0, (len(words) - 1))
@@ -40,9 +32,7 @@ lblSpace.grid(column=1, row=0)
 lbl2 = Label(window, text="WORDS", font='Times 14', width=30, height=15, bg="lightblue", padx=1, pady=1)
 lbl2.grid(column=2, row=0)
 
-btn = Button(window, text="TWO WORDS NOW!", command=button_click, width=20, bg="beige", border=0, )
+btn = Button(window, text="TWO WORDS NOW!", command=button_click, width=20, bg="beige")
 btn.grid(column=0, row=100, columnspan=3)
-btn.bind("<Enter>", on_enter)
-btn.bind("<Leave>", on_leave)
 
 window.mainloop()
