@@ -20,7 +20,7 @@ def button_click():
 
 window = Tk()
 window.title("Two Words")
-window.geometry('560x320')
+window.geometry('560x325')
 
 lbl1 = Label(window, text="TWO", font='Times 14', width=30, height=15, bg="lightblue", padx=1, pady=1)
 lbl1.grid(column=0, row=0)
