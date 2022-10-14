@@ -14,18 +14,21 @@ def get_words(words):
 
 def button_click():
     words = get_words(w)
-    processed = f'{words[0].upper()}    ~~AND~~    {words[1].upper()}'
-    lbl.configure(text=processed)
+    lbl1.configure(text=words[0])
+    lbl2.configure(text=words[1])
 
 
 window = Tk()
 window.title("Two Words")
-window.geometry('600x400')
+window.geometry('816x320')
 
-lbl = Label(window, text="Ready?", font='Times 14', width=60, height=15)
-lbl.grid(column=0, row=0)
+lbl1 = Label(window, text="TWO", font='Times 14', width=30, height=15, bg="lightblue")
+lbl1.grid(column=0, row=0)
 
-btn = Button(window, text="TWO WORDS NOW!", command=button_click)
-btn.grid(column=0, row=100)
+lbl2 = Label(window, text="WORDS", font='Times 14', width=30, height=15, bg="lightblue")
+lbl2.grid(column=2, row=0)
+
+btn = Button(window, text="TWO WORDS NOW!", command=button_click, width=30)
+btn.grid(column=1, row=100)
 
 window.mainloop()
