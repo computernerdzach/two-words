@@ -20,15 +20,18 @@ def button_click():
 
 window = Tk()
 window.title("Two Words")
-window.geometry('816x320')
+window.geometry('560x320')
 
-lbl1 = Label(window, text="TWO", font='Times 14', width=30, height=15, bg="lightblue")
+lbl1 = Label(window, text="TWO", font='Times 14', width=30, height=15, bg="lightblue", padx=1, pady=1)
 lbl1.grid(column=0, row=0)
 
-lbl2 = Label(window, text="WORDS", font='Times 14', width=30, height=15, bg="lightblue")
+lblSpace = Label(window, width=1, height=17, bg="lightgrey")
+lblSpace.grid(column=1, row=0)
+
+lbl2 = Label(window, text="WORDS", font='Times 14', width=30, height=15, bg="lightblue", padx=1, pady=1)
 lbl2.grid(column=2, row=0)
 
 btn = Button(window, text="TWO WORDS NOW!", command=button_click, width=30)
-btn.grid(column=1, row=100)
+btn.grid(column=0, row=100, columnspan=3)
 
 window.mainloop()
