@@ -9,17 +9,17 @@ from words import words as w
 # Functions
 
 # generate two random words
-def get_words(words):
-    index1 = r(0, (len(words) - 1))
-    index2 = r(0, (len(words) - 1))
+def get_words():
+    index1 = r(0, (len(w)))
+    index2 = r(0, (len(w)))
     while index1 == index2:
-        index2 = r(0, (len(words)))
-    return [words[index1], words[index2]]
+        index2 = r(0, (len(w)))
+    return [w[index1], w[index2]]
 
 
 # post randomized words to label boxes
 def button_click():
-    words = get_words(w)
+    words = get_words()
     lbl1.configure(text=words[0])
     lbl2.configure(text=words[1])
 
