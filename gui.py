@@ -1,5 +1,4 @@
 # Imports
-
 from tkinter import *
 from random import randint as r
 
@@ -7,7 +6,6 @@ from words import words as w
 
 
 # Functions
-
 # generate two random words
 def get_words():
     index1 = r(0, (len(w)))
@@ -24,6 +22,7 @@ def button_click():
     lbl2.configure(text=words[1])
 
 
+# GUI
 # build and configure the gui
 window = Tk()
 window.title("Two Words")
