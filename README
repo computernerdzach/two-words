@@ -2,6 +2,8 @@ TWO WORDS
 written by Zachary Theilen
 proof of concept based on an idea discussed with Phil Juarez
 
+1,615 words with over 1.3 million possible combinations!
+
 Running the app using this method requires the host computer to have Python 3 installed, 3.10 preferred.
 
 1. Clone git repository to your local machine
