@@ -2,13 +2,15 @@ TWO WORDS
 written by Zachary Theilen
 proof of concept based on an idea discussed with Phil Juarez
 
+Running the app using this method requires the host computer to have Python 3 installed, 3.10 preferred.
+
 1. Clone git repository to your local machine
     * open a terminal and navigate to your desired location
     * type the following and press enter:
         git clone https://github.com/computernerdzach/two-words.git
 
 2. Run locally
-    * navigate to the newly downloaded directory:
+    * navigate to the newly downloaded directory and enter the project
         cd two-words
     * launch the application:
         python3 gui.py
